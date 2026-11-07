@@ -4,13 +4,13 @@
       "videos": 2,
       "avgViews": 57,
       "avgViewPct": 63.1,
-      "score": 0.628
+      "score": 0.629
     },
     "animals": {
       "videos": 15,
-      "avgViews": 397,
+      "avgViews": 402,
       "avgViewPct": 52,
-      "score": 1.695
+      "score": 1.723
     },
     "ai_tech": {
       "videos": 3,
@@ -25,34 +25,34 @@
       "score": 0.545
     },
     "bollywood_cricket": {
-      "videos": 12,
-      "avgViews": 215,
+      "videos": 13,
+      "avgViews": 204,
       "avgViewPct": 69,
-      "score": 0.974
+      "score": 0.933
     },
     "india": {
       "videos": 5,
-      "avgViews": 222,
+      "avgViews": 227,
       "avgViewPct": 65.2,
-      "score": 1
+      "score": 1.018
     },
     "science": {
       "videos": 4,
       "avgViews": 205,
       "avgViewPct": 38.8,
-      "score": 0.948
+      "score": 0.951
     },
     "trending": {
       "videos": 5,
       "avgViews": 100,
       "avgViewPct": 54.4,
-      "score": 0.606
+      "score": 0.608
     },
     "psychology": {
       "videos": 2,
       "avgViews": 162,
       "avgViewPct": 40.1,
-      "score": 0.865
+      "score": 0.866
     },
     "money": {
       "videos": 2,
@@ -66,19 +66,19 @@
       "videos": 24,
       "avgViews": 318,
       "avgViewPct": 55.6,
-      "score": 1.398
+      "score": 1.405
     },
     "trick": {
       "videos": 6,
       "avgViews": 29,
       "avgViewPct": 28.9,
-      "score": 0.347
+      "score": 0.348
     },
     "did_you_know": {
       "videos": 8,
       "avgViews": 123,
       "avgViewPct": 53.4,
-      "score": 0.642
+      "score": 0.643
     },
     "top3": {
       "videos": 2,
@@ -87,18 +87,18 @@
       "score": 0.551
     },
     "myth_bust": {
-      "videos": 3,
-      "avgViews": 67,
+      "videos": 4,
+      "avgViews": 66,
       "avgViewPct": 58,
-      "score": 0.582
+      "score": 0.532
     },
     "story": {
       "videos": 9,
-      "avgViews": 280,
+      "avgViews": 291,
       "avgViewPct": 59.4,
-      "score": 1.214
+      "score": 1.26
     }
   },
-  "videosCounted": 52,
-  "updatedAt": "2026-11-07T07:00:06.436Z"
+  "videosCounted": 53,
+  "updatedAt": "2026-11-07T14:16:44.499Z"
 }
