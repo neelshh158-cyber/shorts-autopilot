@@ -1,0 +1,94 @@
+name: Shorts autopilot
+
+# Makes and uploads one Short per run. Three runs a day, at 8:00, 13:00 and
+# 19:00 India time. Change the cron lines to post more or less often (UTC).
+on:
+  schedule:
+    - cron: "30 2 * * *"
+    - cron: "30 7 * * *"
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+    inputs:
+      upload:
+        description: "Upload to YouTube (false = just render and attach the mp4)"
+        default: "true"
+        type: choice
+        options: ["true", "false"]
+      category:
+        description: "Force a category key from config.json (blank = let the picker decide)"
+        default: ""
+      format:
+        description: "Force a format key (blank = let the picker decide)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shorts-autopilot
+  cancel-in-progress: false
+
+jobs:
+  make-and-post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Make and post the Short
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          # Microsoft's Edge voice refuses GitHub's IP range; don't waste time on it here.
+          TTS_ORDER: gemini,elevenlabs,edge
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.upload }}" = "false" ]; then FLAGS="$FLAGS --no-upload"; fi
+          if [ -n "${{ github.event.inputs.category }}" ]; then FLAGS="$FLAGS --category=${{ github.event.inputs.category }}"; fi
+          if [ -n "${{ github.event.inputs.format }}" ]; then FLAGS="$FLAGS --format=${{ github.event.inputs.format }}"; fi
+          node src/index.mjs run $FLAGS
+
+      - name: Keep the video for 7 days
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ github.run_id }}
+          path: out/*.mp4
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Save history and scores back to the repo
+        if: always()
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          git add data/history.json data/performance.json
+          if git diff --cached --quiet; then echo "nothing to save"; exit 0; fi
+          git commit -m "shorts: log run $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:"${{ github.ref_name }}" && exit 0
+            sleep 5
+          done
+          exit 1
