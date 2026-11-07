@@ -1,0 +1,104 @@
+{
+  "categories": {
+    "mystery": {
+      "videos": 2,
+      "avgViews": 57,
+      "avgViewPct": 63.1,
+      "score": 0.631
+    },
+    "animals": {
+      "videos": 15,
+      "avgViews": 380,
+      "avgViewPct": 49.2,
+      "score": 1.664
+    },
+    "ai_tech": {
+      "videos": 3,
+      "avgViews": 24,
+      "avgViewPct": 30.6,
+      "score": 0.466
+    },
+    "history": {
+      "videos": 2,
+      "avgViews": 20,
+      "avgViewPct": 52.2,
+      "score": 0.546
+    },
+    "bollywood_cricket": {
+      "videos": 12,
+      "avgViews": 211,
+      "avgViewPct": 69.6,
+      "score": 0.975
+    },
+    "india": {
+      "videos": 4,
+      "avgViews": 235,
+      "avgViewPct": 70.7,
+      "score": 1.056
+    },
+    "science": {
+      "videos": 4,
+      "avgViews": 203,
+      "avgViewPct": 39,
+      "score": 0.958
+    },
+    "trending": {
+      "videos": 5,
+      "avgViews": 100,
+      "avgViewPct": 54.4,
+      "score": 0.614
+    },
+    "psychology": {
+      "videos": 2,
+      "avgViews": 163,
+      "avgViewPct": 40.9,
+      "score": 0.874
+    },
+    "money": {
+      "videos": 2,
+      "avgViews": 16,
+      "avgViewPct": 12.2,
+      "score": 0.536
+    }
+  },
+  "formats": {
+    "relatable_funny": {
+      "videos": 24,
+      "avgViews": 315,
+      "avgViewPct": 55.7,
+      "score": 1.418
+    },
+    "trick": {
+      "videos": 6,
+      "avgViews": 29,
+      "avgViewPct": 28.9,
+      "score": 0.35
+    },
+    "did_you_know": {
+      "videos": 8,
+      "avgViews": 118,
+      "avgViewPct": 54.3,
+      "score": 0.636
+    },
+    "top3": {
+      "videos": 2,
+      "avgViews": 23,
+      "avgViewPct": 66.9,
+      "score": 0.552
+    },
+    "myth_bust": {
+      "videos": 3,
+      "avgViews": 67,
+      "avgViewPct": 58,
+      "score": 0.586
+    },
+    "story": {
+      "videos": 8,
+      "avgViews": 267,
+      "avgViewPct": 52.2,
+      "score": 1.184
+    }
+  },
+  "videosCounted": 51,
+  "updatedAt": "2026-11-05T20:46:18.959Z"
+}

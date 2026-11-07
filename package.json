@@ -1,0 +1,20 @@
+{
+  "name": "shorts-autopilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fully automatic YouTube Shorts channel: picks a topic, writes a Hindi script, voices it, finds footage, renders captions, uploads, and learns from views.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "run": "node src/index.mjs run",
+    "preview": "node src/index.mjs run --no-upload",
+    "mock": "SHORTS_MOCK=1 node src/index.mjs run --no-upload",
+    "analytics": "node src/index.mjs analytics",
+    "auth": "node scripts/auth.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "googleapis": "144.0.0",
+    "msedge-tts": "2.0.3"
+  }
+}

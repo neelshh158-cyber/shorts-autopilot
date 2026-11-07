@@ -1,0 +1,249 @@
+{
+  "channel": {
+    "name": "Dimaag Khol",
+    "niche": "surprising, useful facts about money, psychology, science and India that make Indian viewers feel smarter in 30 seconds",
+    "audience": "Indian viewers aged 16-35 who scroll Shorts on their phone",
+    "language": "hi",
+    "languageName": "Hindi (Devanagari script) with everyday English words mixed in, the way people actually talk",
+    "voice": "hi-IN-MadhurNeural",
+    "voiceRate": "+10%",
+    "geminiVoice": "Puck",
+    "ttsOrder": "edge,gemini,elevenlabs",
+    "elevenLabsVoiceId": ""
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "targetSeconds": 30,
+    "maxSeconds": 50,
+    "minSegmentSeconds": 2.4,
+    "musicVolume": 0.1
+  },
+  "captions": {
+    "fontHindi": "Noto Sans Devanagari",
+    "fontLatin": "Poppins",
+    "fontSize": 112,
+    "maxWordsPerLine": 3,
+    "maxCharsPerLine": 20,
+    "highlightColor": "&H0000E5FF",
+    "textColor": "&H00FFFFFF",
+    "outlineColor": "&H00000000",
+    "titleFontSize": 60
+  },
+  "publish": {
+    "privacy": "public",
+    "categoryId": "27",
+    "hashtags": [
+      "#shorts",
+      "#facts",
+      "#hindi",
+      "#knowledge"
+    ],
+    "madeForKids": false,
+    "titleSuffix": " #shorts"
+  },
+  "picker": {
+    "exploreRate": 0.2,
+    "recentWindow": 60,
+    "avoidRepeatTopics": 80
+  },
+  "categories": [
+    {
+      "key": "trending",
+      "label": "What India is searching for today (Google Trends)",
+      "dynamic": "google-trends",
+      "weight": 1.5,
+      "seeds": []
+    },
+    {
+      "key": "bollywood_cricket",
+      "label": "Bollywood, music, OTT and cricket: behind-the-scenes facts, money, records and habits of famous people (their work, never private life)",
+      "weight": 2.5,
+      "seeds": [
+        "the Bollywood film that was shot in 4 days and became a blockbuster",
+        "why Sachin Tendulkar always wore his pads first on the left leg",
+        "the actor who was paid 1 rupee for a film",
+        "how much the IPL earns per ball bowled",
+        "the Hindi song recorded in a single take that became iconic",
+        "the cricket rule that changed because of one Indian match",
+        "the villain who refused to be paid more than the hero",
+        "why Indian films are exactly 2 hours 30 minutes on average",
+        "the song Kishore Kumar recorded while pretending to be ill",
+        "why Amitabh Bachchan's voice was rejected by All India Radio",
+        "the Bollywood film that ran in one theatre for 25 years",
+        "how much Virat Kohli earns per Instagram post compared to a match",
+        "the IPL rule that made one over cost a team the trophy",
+        "why MS Dhoni finishes with a helicopter shot, the real origin",
+        "the Shah Rukh Khan film rejected by three other stars",
+        "the cricketer who bowled with a broken finger and took five wickets",
+        "the background music in Bollywood that was actually a mistake",
+        "the item song recorded in 20 minutes that topped charts for a year",
+        "why Indian cricket jerseys changed from sky blue",
+        "the lowest paid actor in a 1000 crore film",
+        "the web series that was shot in a real jail",
+        "the Rajinikanth scene that was done without any VFX",
+        "the stunt that was real in a Bollywood film and nobody knew",
+        "the stadium in India where cricket stops for trains"
+      ]
+    },
+    {
+      "key": "mystery",
+      "label": "Mysteries and unexplained things, mostly from India",
+      "weight": 1.2,
+      "seeds": [
+        "the Rajasthan fort nobody is allowed to enter after sunset",
+        "the lake in Uttarakhand full of ancient human skeletons",
+        "the Indian village where birds fall from the sky every year",
+        "the temple whose pillars play music",
+        "the hanging pillar of Lepakshi that engineers can't explain",
+        "the Shanti Stupa shadow that appears only one day a year",
+        "the Himalayan town where time seems to run differently",
+        "why Bermuda triangle style stories exist in the Bay of Bengal"
+      ]
+    },
+    {
+      "key": "animals",
+      "label": "Animal facts that sound fake but are true",
+      "weight": 1.5,
+      "seeds": [
+        "why crows in India remember your face for years",
+        "the Indian bird that can sleep while flying",
+        "how octopuses have three hearts and blue blood",
+        "why cows have best friends and get stressed apart",
+        "the fish in Indian rivers that can walk on land",
+        "why dogs tilt their head when you talk to them",
+        "the elephant that recognised itself in a mirror",
+        "why pigeons can find their way home from 1000 km",
+        "the Indian street dog that waited 5 years at a railway station",
+        "why elephants in Kerala cry real tears",
+        "the monkey in Shimla that steals only sunglasses",
+        "how crows hold funerals",
+        "why cats bring you dead things as a gift",
+        "the Indian peacock dance explained by science"
+      ]
+    },
+    {
+      "key": "psychology",
+      "label": "Psychology and human behaviour",
+      "weight": 1.2,
+      "seeds": [
+        "why we forget why we walked into a room",
+        "the trick salesmen use to make you say yes",
+        "why time feels faster as you get older",
+        "what your sitting position says about confidence",
+        "why we remember embarrassing moments for years",
+        "the 2-minute rule that beats procrastination",
+        "why people believe confident people even when they are wrong",
+        "why we scroll even when we are bored of scrolling"
+      ]
+    },
+    {
+      "key": "money",
+      "label": "Money, savings and smart spending in India",
+      "weight": 0.7,
+      "seeds": [
+        "how much 500 rupees a month becomes in 20 years in an index fund",
+        "the hidden charge in zero-cost EMI",
+        "why your UPI payments make you spend more than cash",
+        "the 50-30-20 rule explained for a 25000 rupee salary",
+        "credit card minimum due trap explained",
+        "what happens if you miss one SIP",
+        "why banks love people who only save in fixed deposits",
+        "how inflation quietly eats your savings account"
+      ]
+    },
+    {
+      "key": "ai_tech",
+      "label": "AI and technology explained in 30 seconds",
+      "weight": 0.6,
+      "seeds": [
+        "the free AI tool that writes your emails and most people haven't tried",
+        "how your phone knows you're asleep",
+        "why Indian apps ask for so many permissions",
+        "the WhatsApp setting that stops photos filling your phone",
+        "how UPI handles 500 million payments a day without crashing",
+        "what actually happens when you clear cache",
+        "why airplane mode makes charging faster",
+        "the Google Maps trick for areas with no network"
+      ]
+    },
+    {
+      "key": "india",
+      "label": "Surprising facts about India",
+      "weight": 0.9,
+      "seeds": [
+        "the Indian village where every house has a Wi-Fi name but no front door",
+        "why Indian trains have different whistle codes",
+        "the floating post office in Dal Lake",
+        "how ISRO reached Mars cheaper than a Hollywood movie budget",
+        "the Indian town that runs entirely on solar power",
+        "why Mumbai dabbawalas almost never make a mistake",
+        "the shortest railway station name in India",
+        "the Indian state where it rains almost every day"
+      ]
+    },
+    {
+      "key": "science",
+      "label": "Everyday science that sounds unbelievable",
+      "weight": 0.8,
+      "seeds": [
+        "why your phone battery drains faster in the cold",
+        "what actually happens when you crack your knuckles",
+        "why hot water can freeze faster than cold water",
+        "how much of your body is replaced every year",
+        "why the sky is not actually blue",
+        "why mosquitoes bite some people more",
+        "how many atoms from Shah Jahan you breathe in every day",
+        "why we yawn when someone else yawns"
+      ]
+    },
+    {
+      "key": "history",
+      "label": "History stories most people never heard",
+      "weight": 1.0,
+      "seeds": [
+        "the Indian king who was richer than the whole British empire",
+        "how a tea party started a war",
+        "the maharaja who bought Rolls Royces to carry garbage",
+        "the day India's time zone was decided",
+        "how Chanakya predicted modern economics",
+        "why Kohinoor changed hands so many times",
+        "the first Indian to fly a plane before the Wright brothers' fame reached India",
+        "the pepper trade that made Kerala the richest coast in the world"
+      ]
+    }
+  ],
+  "formats": [
+    {
+      "key": "did_you_know",
+      "label": "One surprising fact, explained in a story",
+      "structure": "Open with a shocking claim, explain why it is true in 3 short beats, end with a one-line takeaway."
+    },
+    {
+      "key": "top3",
+      "label": "Three quick facts on one theme",
+      "structure": "Promise three things in the hook, deliver each in one or two sentences, number them clearly."
+    },
+    {
+      "key": "myth_bust",
+      "label": "A common belief that is wrong",
+      "structure": "State what everyone believes, say it is wrong, give the real reason, end with what to do instead."
+    },
+    {
+      "key": "trick",
+      "label": "A practical trick the viewer can use today",
+      "structure": "Promise the result, give the trick step by step, end with why it works."
+    },
+    {
+      "key": "relatable_funny",
+      "label": "A funny, relatable observation, meme style",
+      "structure": "Describe a situation every Indian viewer has lived through, exaggerate it a little, build to one punchline, keep it warm and never insulting to a group."
+    },
+    {
+      "key": "story",
+      "label": "A tiny true story with a twist",
+      "structure": "Set the scene in one sentence, raise the stakes, land the twist in the last line. Real people and real events only."
+    }
+  ]
+}
