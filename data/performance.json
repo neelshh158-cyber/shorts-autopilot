@@ -1,34 +1,28 @@
 {
   "categories": {
-    "trending": {
-      "videos": 7,
-      "avgViews": 108,
-      "avgViewPct": 52.2,
-      "score": 0.531
-    },
     "animals": {
       "videos": 21,
       "avgViews": 495,
       "avgViewPct": 68.4,
-      "score": 1.753
+      "score": 1.757
     },
     "bollywood_cricket": {
       "videos": 15,
       "avgViews": 148,
       "avgViewPct": 62.6,
-      "score": 0.598
+      "score": 0.6
     },
     "india": {
-      "videos": 7,
-      "avgViews": 263,
+      "videos": 8,
+      "avgViews": 241,
       "avgViewPct": 53.3,
-      "score": 0.978
+      "score": 0.913
     },
     "science": {
       "videos": 4,
       "avgViews": 159,
       "avgViewPct": 41.5,
-      "score": 0.725
+      "score": 0.726
     },
     "money": {
       "videos": 2,
@@ -42,11 +36,17 @@
       "avgViewPct": 44.1,
       "score": 0.732
     },
+    "trending": {
+      "videos": 6,
+      "avgViews": 105,
+      "avgViewPct": 49.9,
+      "score": 0.541
+    },
     "psychology": {
       "videos": 2,
       "avgViews": 132,
       "avgViewPct": 53.5,
-      "score": 0.743
+      "score": 0.744
     },
     "mystery": {
       "videos": 1,
@@ -57,22 +57,22 @@
   },
   "formats": {
     "relatable_funny": {
-      "videos": 26,
-      "avgViews": 285,
-      "avgViewPct": 55.6,
-      "score": 1.046
+      "videos": 25,
+      "avgViews": 291,
+      "avgViewPct": 55.4,
+      "score": 1.07
     },
     "did_you_know": {
       "videos": 9,
       "avgViews": 139,
       "avgViewPct": 52.4,
-      "score": 0.601
+      "score": 0.602
     },
     "trick": {
       "videos": 8,
-      "avgViews": 355,
+      "avgViews": 356,
       "avgViewPct": 46.7,
-      "score": 1.248
+      "score": 1.252
     },
     "top3": {
       "videos": 2,
@@ -81,10 +81,10 @@
       "score": 0.526
     },
     "story": {
-      "videos": 13,
-      "avgViews": 356,
+      "videos": 14,
+      "avgViews": 337,
       "avgViewPct": 71.8,
-      "score": 1.271
+      "score": 1.214
     },
     "myth_bust": {
       "videos": 2,
@@ -94,5 +94,5 @@
     }
   },
   "videosCounted": 60,
-  "updatedAt": "2026-11-18T21:30:21.206Z"
+  "updatedAt": "2026-11-19T10:39:04.840Z"
 }
