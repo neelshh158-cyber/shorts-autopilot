@@ -1,52 +1,52 @@
 {
   "categories": {
-    "animals": {
-      "videos": 20,
-      "avgViews": 542,
-      "avgViewPct": 53.8,
-      "score": 1.374
-    },
     "india": {
-      "videos": 7,
-      "avgViews": 516,
-      "avgViewPct": 53.7,
-      "score": 1.267
+      "videos": 8,
+      "avgViews": 452,
+      "avgViewPct": 53.6,
+      "score": 1.156
     },
     "bollywood_cricket": {
       "videos": 9,
       "avgViews": 137,
       "avgViewPct": 50.8,
-      "score": 0.473
+      "score": 0.477
+    },
+    "animals": {
+      "videos": 19,
+      "avgViews": 549,
+      "avgViewPct": 53.3,
+      "score": 1.407
     },
     "trending": {
       "videos": 8,
       "avgViews": 213,
-      "avgViewPct": 41.9,
-      "score": 0.645
+      "avgViewPct": 35.9,
+      "score": 0.651
     },
     "mystery": {
       "videos": 6,
       "avgViews": 701,
-      "avgViewPct": 58.2,
-      "score": 1.619
+      "avgViewPct": 50.5,
+      "score": 1.639
     },
     "science": {
       "videos": 3,
       "avgViews": 117,
       "avgViewPct": 45.1,
-      "score": 0.582
+      "score": 0.585
     },
     "psychology": {
       "videos": 4,
-      "avgViews": 155,
-      "avgViewPct": 67.9,
-      "score": 0.603
+      "avgViews": 159,
+      "avgViewPct": 45.2,
+      "score": 0.613
     },
     "history": {
       "videos": 2,
-      "avgViews": 233,
+      "avgViews": 263,
       "avgViewPct": 51.9,
-      "score": 0.803
+      "score": 0.847
     },
     "money": {
       "videos": 1,
@@ -57,42 +57,42 @@
   },
   "formats": {
     "story": {
-      "videos": 20,
-      "avgViews": 490,
-      "avgViewPct": 53.6,
-      "score": 1.251
+      "videos": 19,
+      "avgViews": 492,
+      "avgViewPct": 48.7,
+      "score": 1.271
     },
     "myth_bust": {
       "videos": 2,
       "avgViews": 37,
       "avgViewPct": 84.2,
-      "score": 0.548
+      "score": 0.549
     },
     "relatable_funny": {
       "videos": 14,
-      "avgViews": 343,
+      "avgViews": 347,
       "avgViewPct": 46,
-      "score": 0.906
+      "score": 0.927
     },
     "trick": {
       "videos": 9,
       "avgViews": 363,
       "avgViewPct": 52.1,
-      "score": 0.957
+      "score": 0.967
     },
     "did_you_know": {
-      "videos": 7,
-      "avgViews": 212,
+      "videos": 8,
+      "avgViews": 193,
       "avgViewPct": 55.8,
-      "score": 0.652
+      "score": 0.609
     },
     "top3": {
       "videos": 8,
-      "avgViews": 450,
-      "avgViewPct": 57.4,
-      "score": 1.138
+      "avgViews": 452,
+      "avgViewPct": 45,
+      "score": 1.156
     }
   },
   "videosCounted": 60,
-  "updatedAt": "2026-11-27T17:35:58.823Z"
+  "updatedAt": "2026-11-27T22:12:55.171Z"
 }
